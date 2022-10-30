@@ -1,0 +1,124 @@
+# https://github.com/ShaylanDias/shares-squared/blob/master/backend/serverless.yml
+
+service: stonks
+
+# Create an optimized package for our functions
+package:
+  individually: true
+
+plugins:
+  - serverless-bundle # Package our functions with Webpack
+  - serverless-offline
+  - serverless-dotenv-plugin # Load .env as environment variables
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+  region: us-west-1
+
+  # These environment variables are made available to our functions
+  # under process.env.
+  environment:
+    tableName: notes
+
+  # 'iamRoleStatements' defines the permission policy for the Lambda function.
+  # In this case Lambda functions are granted with permissions to access DynamoDB.
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Scan
+        - dynamodb:Query
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:DescribeTable
+      Resource: "arn:aws:dynamodb:us-west-1:*:*"
+
+# Create our resources with separate CloudFormation templates
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
+
+functions:
+  add-symbols:
+    handler: add-symbols.main
+    events:
+      - http:
+          path: symbols
+          method: post
+          authorizer: aws_iam
+          cors: true
+  remove-symbols:
+    handler: remove-symbols.main
+    events:
+      - http:
+          path: symbols
+          method: delete
+          authorizer: aws_iam
+          cors: true
+  create-watchlist:
+    handler: create-watchlist.main
+    events:
+      - http:
+          path: watchlist
+          method: post
+          authorizer: aws_iam
+          cors: true
+  delete-watchlist:
+    handler: delete-watchlist.main
+    events:
+      - http:
+          path: watchlist
+          method: delete
+          authorizer: aws_iam
+          cors: true
+  get-watchlists:
+    handler: get-watchlists.main
+    events:
+      - http:
+          path: watchlist/{id}
+          method: get
+          authorizer: aws_iam
+          cors: true
+  get-own-watchlists:
+    handler: get-watchlists.main
+    events:
+      - http:
+          path: watchlist
+          method: get
+          authorizer: aws_iam
+          cors: true
+  stock-info:
+    handler: stock-info.main
+    events:
+      - http:
+          path: market
+          method: get
+          authorizer: aws_iam
+          cors: true
+  add-relation:
+    handler: add-relation.main
+    events:
+      - http:
+          path: user-relation
+          method: post
+          authorizer: aws_iam
+          cors: true
+  get-relations:
+    handler: get-relations.main
+    events:
+      - http:
+          path: user-relation/{relationship}
+          method: get
+          authorizer: aws_iam
+          cors: true
+  update-watchlist-privacy:
+    handler: update-watchlist-privacy.main
+    events:
+      - http:
+          path: watchlist-update
+          method: post
+          authorizer: aws_iam
+          cors: true

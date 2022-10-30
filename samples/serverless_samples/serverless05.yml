@@ -1,0 +1,117 @@
+# https://github.com/aaronhayes/secretr/blob/master/backend/serverless.yml
+
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: secretr-backend
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs8.10
+  profile: secretr
+  environment:
+    ENV: ${opt:stage, self:provider.stage}
+    SECRETS: ${self:custom.kmsSecrets.secrets.SECRETS}
+  timeout: 30
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - KMS:Decrypt
+      Resource: ${self:custom.kmsSecrets.keyArn}
+    - Effect: Allow
+      Action:
+        - sqs:*
+      Resource: "*"
+
+functions:
+  githubAuth:
+    handler: src/functions/github/auth.default
+    name: ${self:provider.environment.ENV}-github-auth
+    events:
+      - http:
+          path: github/auth
+          method: get
+          cors: true
+
+  githubWebhook:
+    handler: src/functions/github/webhook.default
+    name: ${self:provider.environment.ENV}-github-webhook
+    events:
+      - http:
+          path: github/webhook
+          method: post
+          cors: true
+
+  githubCheck:
+    handler: src/functions/github/check.handleGitHubQueueCheck
+    name: ${self:provider.environment.ENV}-github-check
+    timeout: 600
+    events:
+      - sqs:
+          queueName: ${self:provider.environment.ENV}-GitHubCheckQueue
+          arn:
+            Fn::GetAtt:
+              - GitHubCheckQueue
+              - Arn
+          batchSize: 1
+
+resources:
+  Resources:
+    GitHubCheckQueue:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: ${self:provider.environment.ENV}-GitHubCheckQueue
+        VisibilityTimeout: 600
+
+plugins:
+  - serverless-webpack
+  - serverless-domain-manager
+  - serverless-kms-secrets
+  - serverless-offline-sqs
+  - serverless-offline
+
+custom:
+  stages:
+    - dev
+    - staging
+    - prod
+
+  serverless-offline:
+    port: 3000
+    babelOptions:
+      presets:
+        [
+          [
+            "@babel/preset-env",
+            { "targets": { "node": "8.10.0" }, "shippedProposals": true },
+          ],
+          ["@babel/preset-flow"],
+        ]
+
+  customDomain:
+    domainName: api.secretr.co
+    basePath: ${opt:stage, self:provider.stage}
+    stage: ${opt:stage, self:provider.stage}
+    createRoute53Record: true
+
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
+  serverless-offline-sqs:
+    endpoint: http://localhost:4576
+
+  serverless-kms-secrets:
+    secretsFile: kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml
+  kmsSecrets: ${file(kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml)}

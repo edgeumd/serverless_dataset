@@ -1,0 +1,105 @@
+# https://github.com/zzzramzzz/video-transcoder/blob/master/transcoder-backend/serverless.yml
+
+plugins:
+  - serverless-plugin-include-dependencies
+  - serverless-deployment-bucket
+  - serverless-offline
+
+custom:
+  service: ${opt:service, 'transcoder'}
+  stage: ${opt:stage, 'test'}
+  project: ${opt:project, 'task'}
+
+  defaultStage: test
+
+  profiles:
+    test: pram
+    dev: pram
+    staging: pram
+    prod: pram
+
+  region:
+    test: us-east-1
+    dev: us-east-1
+    staging: us-east-1
+    prod: us-east-1
+  deploymentbucket:
+    test: personal-tasks
+    dev: personal-tasks
+    prod: personal-tasks
+
+  transcoderPiplineId:
+    test: 1608791925165-otymgv
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, self:custom.defaultStage}
+  profile: ${self:custom.profiles.${self:provider.stage}}
+  region: ${self:custom.region.${self:provider.stage}}
+  deploymentBucket:
+    name: ${self:custom.deploymentbucket.${self:provider.stage}}
+  transcoderPiplineId: ${self:custom.transcoderPiplineId.${self:provider.stage}}
+
+  environment:
+    REGION: ${self:provider.region}
+    STAGE: ${self:provider.stage}
+    PIPELINE_ID: ${self:provider.transcoderPiplineId}
+    ACCESS_CODE: 9900
+
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - logs:CreateLogGroup
+        - logs:CreateLogStream
+        - logs:PutLogEvents
+        - lambda:*
+        - elastictranscoder:CreateJob
+        - ses:SendEmail
+        - s3:*
+      Resource:
+        - "*"
+
+service: ${self:custom.service}
+
+package:
+  individually: true
+  exclude:
+    - node_modules/**
+    - package.json
+    - package-lock.json
+    - node_modules/**/aws-sdk/**
+
+functions:
+  transcode-video:
+    handler: transcode/transcodeVideoHandler.main
+    memorySize: 512
+    events:
+      - s3:
+          bucket: test-artifacts-dev
+          event: s3:ObjectCreated:*
+          existing: true
+
+  getSignedUrl:
+    handler: s3Handlers/getSignedUrlHandler.main
+    memorySize: 128
+    events:
+      - http:
+          path: signed-url
+          method: get
+          cors: true
+  listTranscodedFiles:
+    handler: s3Handlers/listFilesHandler.main
+    memorySize: 128
+    events:
+      - http:
+          path: list-files
+          method: get
+          cors: true
+  dispatcher:
+    handler: transcode/transcoderListener.main
+    memorySize: 128
+    events:
+      - sns:
+          arn: arn:aws:sns:us-east-1:991884163379:error_transcoder
+      - sns:
+          arn: arn:aws:sns:us-east-1:991884163379:success_transcoder

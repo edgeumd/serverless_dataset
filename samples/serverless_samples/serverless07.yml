@@ -1,0 +1,78 @@
+# https://github.com/ivanmartos/bamboo-tracker/blob/master/serverless.yml
+# DIDN't Understood, will have to look more.
+
+service: bamboo-tracker
+
+variablesResolutionMode: 20210326
+
+custom:
+  timesheetS3Key: timesheet.yml
+
+provider:
+  name: aws
+  lambdaHashingVersion: 20201221
+  runtime: go1.x
+  stackTags:
+    ENVIRONMENT: ${self:provider.stage}
+    PROJECT: ${self:service}-${self:provider.stage}
+  deploymentBucket:
+    name: ${self:service}-deployment-bucket-${self:provider.region}-${self:provider.stage}
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'eu-central-1'}
+  logRetentionInDays: 7
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:GetObject"
+      Resource:
+        Fn::Join:
+          - "/"
+          - - !GetAtt ["TimesheetsBucket", Arn]
+            - ${self:custom.timesheetS3Key}
+    - Effect: "Allow"
+      Action:
+        - "ses:SendEmail"
+      Resource: "arn:aws:ses:${self:provider.region}:*:identity/${env:DAILY_TIME_TRACKING_SENDER_EMAIL}"
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ./bin/**
+
+functions:
+  step_getTodaysTimesheet:
+    handler: bin/lambda/getTodaysTimesheet
+    environment:
+      TIMESHEET_S3_KEY: ${self:custom.timesheetS3Key}
+      TIMESHEET_S3_BUCKET: !Ref "TimesheetsBucket"
+  step_uploadTimesheet:
+    handler: bin/lambda/uploadTimesheet
+    environment:
+      BAMBOO_HOST: ${env:BAMBOO_HOST}
+      BAMBOO_USERNAME: ${env:BAMBOO_USERNAME}
+      BAMBOO_PASSWORD: ${env:BAMBOO_PASSWORD}
+  step_retrieveCurrentTimeTracking:
+    handler: bin/lambda/retrieveCurrentTimeTracking
+    environment:
+      BAMBOO_HOST: ${env:BAMBOO_HOST}
+      BAMBOO_USERNAME: ${env:BAMBOO_USERNAME}
+      BAMBOO_PASSWORD: ${env:BAMBOO_PASSWORD}
+  step_prepareTimeTrackingEmailPayload:
+    handler: bin/lambda/prepareTimeTrackingEmailPayload
+    environment:
+      DAILY_TIME_TRACKING_SENDER_EMAIL: ${env:DAILY_TIME_TRACKING_SENDER_EMAIL}
+      DAILY_TIME_TRACKING_RECIPIENT_EMAIL: ${env:DAILY_TIME_TRACKING_RECIPIENT_EMAIL}
+  step_sendNotificationEmail:
+    handler: bin/lambda/sendNotificationEmail
+
+resources:
+  Resources:
+    TimesheetsBucket: ${file(./resources/S3/TimesheetsBucket.yml):Bucket}
+    StateMachineExecutionRole: ${file(./resources/IAM/StateMachineExecutionRole.yml):Role}
+    EventBridgeExecutionRole: ${file(./resources/IAM/EventBridgeExecutionRole.yml):Role}
+    UploadTimesheetStateMachine: ${file(./resources/StepFunctions/UploadTimesheetStateMachine.yml):StateMachine}
+    UploadTimesheetFailedStateRule: ${file(./resources/Events/UploadTimesheetFailedStateRule.yml):Rule}
+    UploadTimesheetRule: ${file(./resources/Events/UploadTimesheetRule.yml):Rule}
+    MonitoringTopic: ${file(./resources/SNS/MonitoringTopic.yml):Topic}
+    MonitoringTopicPolicy: ${file(./resources/SNS/MonitoringTopicPolicy.yml):TopicPolicy}

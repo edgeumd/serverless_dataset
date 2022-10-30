@@ -1,0 +1,81 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+# https://github.com/vineetseraro/gps-ble-based-guard-trak/blob/master/tracking/serverless.yml
+
+service: ak-coretracking # NOTE: update this with your service name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+custom:
+  paths:
+    configPath: "./config"
+
+  constants: ${file(${self:custom.paths.configPath}/constants.serverless.yml)}
+
+# For variables : https://github.com/vineetseraro/gps-ble-based-guard-trak/tree/master/tracking/config
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  role: ${self:custom.constants.defaults.role}
+  # default function versoning is on required for serverless-alias plugin
+  versionFunctions: ${self:custom.constants.defaults.versionFunctions}
+  stage: ${opt:stage, self:custom.constants.defaults.stage}
+  region: ${self:custom.constants.defaults.region}
+  memorySize: ${self:custom.constants.defaults.memorySize}
+  timeout: ${self:custom.constants.defaults.timeout}
+  deploymentBucket: ${self:custom.constants.defaults.deploymentBucketName}
+  vpc: ${file(${self:custom.paths.configPath}/vpc.serverless.yml)}
+  environment: ${file(${self:custom.paths.configPath}/environment.serverless.yml):${self:provider.stage}}
+  tracing: true
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "xray:PutTraceSegments"
+        - "xray:PutTelemetryRecords"
+      Resource:
+        - "*"
+
+# you can overwrite defaults here
+#  stage: dev
+#  region: us-east-1
+# you can add packaging information here
+
+plugins:
+  - serverless-plugin-tracing
+
+package:
+  #include: ${file(${self:custom.paths.configPath}/includes.serverless.yml)}
+  exclude: ${file(${self:custom.paths.configPath}/excludes.serverless.yml)}
+
+functions:
+  Tracking:
+    handler: functions/tracking.handler
+    description: Function to pass request to process points
+    memorySize: 128
+    timeout: 30
+    events:
+      - stream:
+          # https://www.youtube.com/watch?v=07iZOEl0knc
+          arn: arn:aws:kinesis:${self:custom.constants.defaults.region}:${self:provider.environment.accountNo}:stream/${self:provider.environment.coreTrackingStream}
+          batchSize: 100
+          startingPosition: LATEST
+          enabled: true
+
+  ProcessPoints:
+    handler: functions/processpoints.handler
+    description: Function to process points
+    memorySize: 512
+    timeout: 90
