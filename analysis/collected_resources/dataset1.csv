@@ -1,0 +1,200 @@
+repo_name,purpose,query,platform,original_path
+jayfry1077_discord-starfinder,returns information about starfinder,discord bot information retrieval starfinder,aws,storage/nfs/aws/1-201/jayfry1077_discord-starfinder
+jordanbuschman_howdoi-bot-serverless,queries yahoo answers and returns best results,discord bot get answers how to,aws,storage/nfs/aws/10401-10601/jordanbuschman_howdoi-bot-serverless
+david--wright_habiticabot,bot to keep track of task completion,telegram bot track task completion habitica,aws,storage/nfs/aws/6001-6201/david--wright_habiticabot
+hastobegood_crypto-dca, dollar cost averaging bot for crypto,trading bot binance crypto,aws,storage/nfs/aws/10801-11001/hastobegood_crypto-dca
+hastobegood_crypto-detector, detect new crypto listing,trading bot detect new crypto listing,aws,storage/nfs/aws/3001-3201/hastobegood_crypto-detector
+revmischa_qanda,ask and answer questions on slack anonymously,slack anonymous answer ask questions,aws,storage/nfs/aws/7601-7801/revmischa_qanda
+miridius_serverless-telegram,library for making serverless telegram bot,telegram bot framework library,aws,storage/nfs/aws/10001-10201/miridius_serverless-telegram
+marcusturewicz_dotnet-twitter-bot,twitter bot to retweet .net tweets,twitter bot retweet hashtag topic .net,aws,storage/nfs/aws/1401-1601/marcusturewicz_dotnet-twitter-bot
+Geomates_KandilliEarthquakeNotifier,telegram bot for earthquake notifications,information bot telegram earthquake,aws,storage/nfs/aws/5601-5801/Geomates_KandilliEarthquakeNotifier
+stuartleaver_discord-reminders-azure-functions,discord bot to create reminders,discord bot reminders,azure,storage/nfs/azure/8200-8400/stuartleaver_discord-reminders-azure-functions
+sjwilczynski_xkom-bot,sms discount notifier bot for xkom,notification bot sms,azure,storage/nfs/azure/17400-17600/sjwilczynski_xkom-bot
+Deer-Bot_deer-bot-functions,game methods and discord notification bot,discord bot notification message game,azure,storage/nfs/azure/4000-4200/Deer-Bot_deer-bot-functions
+projectkenneth_aRTHur-bot,twitter retweet based on query,twitter bot retweet trigger,azure,storage/nfs/azure/9800-10000/projectkenneth_aRTHur-bot
+pratikyoff_discord-dota-bot-v2,discord bot for dota 2 information,discord bot dota information retrieval,serverless,storage/nfs/serverless/2800-3000/pratikyoff_discord-dota-bot-v2
+jayfry1077_serverless_discord_diceroll_bot,discord dice roll bot,discord bot interaction template,serverless,storage/nfs/serverless/13000-13200/jayfry1077_serverless_discord_diceroll_bot
+jasoma_discord-http,discord http interface template,discord http interface template interaction,serverless,storage/nfs/serverless/20800-21000/jasoma_discord-http
+jayfry1077_serverless_discord_LFG_bot,discord bot for group monitoring,discord bot group monitor message,serverless,storage/nfs/serverless/10000-10200/jayfry1077_serverless_discord_LFG_bot
+ScreamingHawk_discord-qotd,discord bot for reddit best post for question of the day,discord reddit bot information retrieval,serverless,storage/nfs/serverless/19400-19600/ScreamingHawk_discord-qotd
+sturman_bus_lviv_bot,telegram bot for tracking bus using easyway,telegram bot track easyway api interaction,serverless,storage/nfs/serverless/18000-18200/sturman_bus_lviv_bot
+christopher-dG_score-post-notifier,discord bot notifier for reddit score post,discord bot reddit information retrieval,serverless,storage/nfs/serverless/22400-22600/christopher-dG_score-post-notifier
+SiarheiMelnik_gather-bot,slack bot for processing csv and xml file,slack bot csv xml processing,serverless,storage/nfs/serverless/17800-18000/SiarheiMelnik_gather-bot
+aarlin_youtube-playlist-discord-notifier,youtube playlist discord notifier,discord bot youtube schedule,serverless,storage/nfs/serverless/18000-18200/aarlin_youtube-playlist-discord-notifier
+arjunattam_vscode-chat,chat from vscode to discord and slack,vscode discord slack chat application,serverless,storage/nfs/serverless/23400-23600/arjunattam_vscode-chat
+mjgriffin1113_vanity-num-generator,vanity number generator application,vanity number application,aws,storage/nfs/aws/1-201/mjgriffin1113_vanity-num-generator
+riyadhalnur_issuelabeler,github bot to label issues automatically,github bot issue label,serverless,storage/nfs/serverless/2200-2400/riyadhalnur_issuelabeler
+Telos-Kitchen_telos-account-creator-services,create telos account from sms number,telos account create sms,serverless,storage/nfs/serverless/12000-12200/Telos-Kitchen_telos-account-creator-services
+ton11797_wine_chain,application for wine chain with serial generator,application shop chain serial generator,aws,storage/nfs/aws/4001-4201/ton11797_wine_chain
+sam-negotiator_website-change-monitor,an application to monitor website for changes,website monitor change application,aws,storage/nfs/aws/1-201/sam-negotiator_website-change-monitor
+HelpMyStreet_verification-service,service to handle user verification,user account verification service,azure,storage/nfs/azure/3200-3400/HelpMyStreet_verification-service
+rguerra712_website-changes-monitor,monitor website changes,website change monitoring scheduled sms, serverless,storage/nfs/serverless/1000-1200/rguerra712_website-changes-monitor
+altcatalin_cryptocurrency-monitor,monitor crypto price and send sms alerts,trading crypto monitor sms alert application,serverless,storage/nfs/serverless/12200-12400/altcatalin_cryptocurrency-monitor
+simlu_aqi-monitor,monitor AQI and notify via slack,aqi monitor slack alert notify,serverless,storage/nfs/serverless/10200-10400/simlu_aqi-monitor
+EduardBargues_serverless-text-notification-website,sms notification application,application text notification sms,serverless,storage/nfs/serverless/1000-1200/EduardBargues_serverless-text-notification-website
+bala1074_gallery-from-url,get images from url,images gallery url get website,serverless,storage/nfs/serverless/14400-14600/bala1074_gallery-from-url
+marteinn_Cynomys,lightweight website monitoring,monitor website issues notify slack sms,serverless,storage/nfs/serverless/10800-11000/marteinn_Cynomys
+szotrj_cloudwatch-logs-automator,automatically send cloudwatch logs to splunk,cloudwatch log automator ship,aws,storage/nfs/aws/1-201/szotrj_cloudwatch-logs-automator
+JuHwon_lambda-log-shipper,automatically send cloudwatch logs to logstash,cloudwatch log automator ship,aws,storage/nfs/aws/10201-10401/JuHwon_lambda-log-shipper
+newrelic_aws_s3_log_ingestion_lambda,sends log data to choice of new relic, cloudwatch log ship,serverless,storage/nfs/serverless/11200-11400/newrelic_aws_s3_log_ingestion_lambda
+lumigo-io_SAR-Logging,manage cloudwatch log groups,manage cloudwatch log group,aws,storage/nfs/aws/2201-2401/lumigo-io_SAR-Logging
+jlhood_json-lambda-logs-to-kinesis-firehose,forwards log data to kinesis stream, log data forward kinesis,aws,storage/nfs/aws/6801-7001/jlhood_json-lambda-logs-to-kinesis-firehose
+aminoz007_aws-newrelic-loggroup-connector,subscribes newrelic to log groups from cloudwatch,cloudwatch log ship,aws,storage/nfs/aws/13001-13201/aminoz007_aws-newrelic-loggroup-connector
+vivekyad4v_aws-lambda-cloudwatch-logs-s3-exporter-golang,export cloudwatch logs to s3,ship cloudwatch s3,aws,storage/nfs/aws/13201-13401/vivekyad4v_aws-lambda-cloudwatch-logs-s3-exporter-golang
+keetonian_cw-logs-to-chime,ship logs to aws chime,cloudwatch logs ship,aws,storage/nfs/aws/6001-6201/keetonian_cw-logs-to-chime
+wrdsb_panama-functions,logging application,log automate application event,azure,storage/nfs/azure/800-1000/wrdsb_panama-functions
+splunk_azure-functions-splunk,splunk azure logging application,splunk logging azure,azure,storage/nfs/azure/14000-14200/splunk_azure-functions-splunk
+yellowcresttechnologies_aws-lambda-cloudwatch-logstream-purger,purge old cloudwatch logs,remove old logs purge automate cloudwatch,serverless,storage/nfs/serverless/5400-5600/yellowcresttechnologies_aws-lambda-cloudwatch-logstream-purger
+smirowstanitzok_logstream-cleanup,purge empty log stream,purge empty cloudwatch logs remove empty automate,serverless,storage/nfs/serverless/17200-17400/smirowstanitzok_logstream-cleanup
+xoeye_serverless-log-dumpster,archive log before deleting,archive log cloudwatch automate,serverless,storage/nfs/serverless/6400-6600/xoeye_serverless-log-dumpster
+newrelic_aws-log-ingestion,application to send cloudwatch logs to newrelic,newrelic cloudwatch log send automator,serverless,storage/nfs/serverless/0-200/newrelic_aws-log-ingestion
+functionalone_cloudwatch-logs-forwarder-splunk,forward cloudwatch logs to splunk,forward cloudwatch logs splunk,serverless,storage/nfs/serverless/14200-14400/functionalone_cloudwatch-logs-forwarder-splunk
+abbasdgr8_cloudwatch-proxy,consumes log streams and sends to a destination can even be slack,cloudwatch log ship,serverless,storage/nfs/serverless/1800-2000/abbasdgr8_cloudwatch-proxy
+jkyberneees_cloudwatch-log-group-proxy,ships logs to a destination,cloudwatch log ship,serverless,storage/nfs/serverless/9600-9800/jkyberneees_cloudwatch-log-group-proxy
+AlexeyPerov_LogKeeper-Flutter-Firebase,log snapshot management solution,manage logs flutter firebase automate,serverless,storage/nfs/serverless/12400-12600/AlexeyPerov_LogKeeper-Flutter-Firebase
+DoSomething_lambda-papertrail,forward logs to papertrail,log ship papertrail,serverless,storage/nfs/serverless/27800-28000/DoSomething_lambda-papertrail
+hata6502_hyena,retweets quality tweets by recognising the image,tweet image recognition retweet,serverless,storage/nfs/aws/201-401/hata6502_hyena
+alxgrk_twitter-tracking,application to track twitter user activity,twitter tracking application user activity,serverless,storage/nfs/serverless/26200-26400/alxgrk_twitter-tracking
+olneyhymn_opc-history,twitter bot to tweet update,tweet update scheduled twitter bot,serverless,storage/nfs/serverless/11000-11200/olneyhymn_opc-history
+tdhopper_moon,twitter bot to tweet update on moon phase,tweet update scheduled twitter bot,serverless,storage/nfs/serverless/26200-26400/tdhopper_moon
+z0ph_Lena-Twitter-bot-nodejs,twitter bot to retweet based on search criteria,twitter bot retweet search,serverless,storage/nfs/serverless/6000-6200/z0ph_Lena-Twitter-bot-nodejs
+whitecat-22_forex_price_chart,twitter bot to tweet forex price chart,twitter bot forex price chart,serverless,storage/nfs/serverless/5800-6000/whitecat-22_forex_price_chart
+tedmdelacruz_hashtag-sentiment-analyzer,Analyze sentiment of a given hashtag,sentiment analysis hashtag twitter,serverless,storage/nfs/serverless/14200-14400/tedmdelacruz_hashtag-sentiment-analyzer
+zmoog_refurbot,twitter bot to tweet update on refurbished products,tweet update scheduled twitter bot,serverless,storage/nfs/serverless/8600-8800/zmoog_refurbot
+oskstr_swe-vaccine-count,twitter bot to tweet vaccine count in sweden,tweet vaccine count scheduled twitter bot,serverless,storage/nfs/serverless/11600-11800/oskstr_swe-vaccine-count
+breenie_ldsc-webcam,twitter bot to tweet webcam image upon upload to s3,tweet webcam image s3 upload,serverless,storage/nfs/serverless/22000-22200/breenie_ldsc-webcam
+solvimm_twitter-sentiment-analysis,analyze sentiment of recent tweets,sentiment analysis twitter,serverless,storage/nfs/serverless/11400-11600/solvimm_twitter-sentiment-analysis
+Hillsie_serverless-twitter-gateway,dynamically control collection of tweets that are pinned to a website,twitter marketing tool application dynamic pin tweet,serverless,storage/nfs/serverless/8800-9000/Hillsie_serverless-twitter-gateway
+defi-org-code_nft-id,twitter nft application,twitter nft application,serverless,storage/nfs/serverless/22600-22800/defi-org-code_nft-id
+K1-Style_imasgirls-photo-rekognition,application using aws rekognition and twitter api,twitter api rekognition application,serverless,storage/nfs/serverless/19400-19600/K1-Style_imasgirls-photo-rekognition
+jeanrauwers_followers-scraper-serverless,follower scraper for twitter youtube and instagram,follower scraper twitter youtube instagram,serverless,storage/nfs/serverless/16400-16600/jeanrauwers_followers-scraper-serverless
+awslabs_aws-serverless-twitter-event-source,turns twitter search query to event source,twitter search event schedule,aws,storage/nfs/aws/13001-13201/awslabs_aws-serverless-twitter-event-source
+AnilRedshift_captions_please,twitter bot to reply with caption of image on web hook,twitter bot caption image web hook,azure,storage/nfs/azure/12400-12600/AnilRedshift_captions_please
+Sai503_GdriveImagetoPDF,application to convert multiple images into pdf,convert image to pdf automate,aws,storage/nfs/aws/401-601/Sai503_GdriveImagetoPDF
+jwalsh2me_gonet-image-split-catalog,application to split images into multiple catalogs,split image catalog automate,aws,storage/nfs/aws/13801-14001/jwalsh2me_gonet-image-split-catalog
+angelo-munoz_image-to-text,application to extract text from images using aws rekognition,aws rekognition image text extract,aws,storage/nfs/aws/3601-3801/angelo-munoz_image-to-text
+mstine_image-pipeline-aws-lambda,different image processing function template pipeline,image processing function template pipeline,aws,storage/nfs/aws/9001-9201/mstine_image-pipeline-aws-lambda
+ganshan_rekognition-sqs,application showing rekognition and sqs for text detection from image,rekognition sqs text detection image,aws,storage/nfs/aws/10201-10401/ganshan_rekognition-sqs
+ClimbAssist_ClimbAssistWebpConverter,application to convert jpg images to webp,convert image to webp automate,aws,storage/nfs/aws/601-801/ClimbAssist_ClimbAssistWebpConverter
+darwaishx_rekognition-sqs,image analysis based on sqs event,image analysis sqs event,aws,storage/nfs/aws/8201-8401/darwaishx_rekognition-sqs
+lumigo-io_SAR-Lambda-Janitor,function to delete unused old version functions, function delete old version,aws,storage/nfs/aws/4401-4601/lumigo-io_SAR-Lambda-Janitor
+claimsforce-gmbh_serverless-application,contains multiple serverless application relating to image pdf and virus scanning for s3,serverless application image pdf virus s3,aws,storage/nfs/aws/11801-12001/claimsforce-gmbh_serverless-application
+Shrivallabha_Streaming-Data-Analysis-for-Household-Energy-Consumption,application for streaming data analysis using kinesis sagemaker and lambdas,streaming data analysis kinesis sagemaker lambdas,aws,storage/nfs/aws/6801-7001/Shrivallabha_Streaming-Data-Analysis-for-Household-Energy-Consumption
+Nikhil612_Data-Analysis-AWS,application for streaming data analysis using kinesis sagemaker and lambdas,streaming data analysis kinesis sagemaker lambdas,aws,storage/nfs/aws/3401-3601/Nikhil612_Data-Analysis-AWS
+tyayers_Azure-Pdf-Imager-Function,converts pdfs to images that are in storage,convert pdf to image storage,azure,storage/nfs/azure/2000-2200/tyayers_Azure-Pdf-Imager-Function
+zooniverse_mapping-viz-functions,information retrieval application for temperature and subjects,information retrieval temperature subjects,azure,storage/nfs/azure/10000-10200/zooniverse_mapping-viz-functions
+KaiWalter_personal-assistant-function,process outlook calendar to block days if overbooked,outlook calendar block days overbooked,azure,storage/nfs/azure/7600-7800/KaiWalter_personal-assistant-function
+dhs-gov_sentop-azure,module that combines sentiment analysis and topic modeling,sentiment analysis topic modeling,azure,storage/nfs/azure/6200-6400/dhs-gov_sentop-azure
+tobiheim_teams-call-records-api,application to collect microsoft teams call record data,microsoft teams call record data,azure,storage/nfs/azure/1200-1400/tobiheim_teams-call-records-api
+notisrac_classifieds_scraper,scrapes ads from different websites,scrape ads application,azure,storage/nfs/azure/0-200/notisrac_classifieds_scraper
+dylanhogg_sql-app,sql query parser to extract table and column info,sql query parser table column,aws,storage/nfs/aws/801-1001/dylanhogg_sql-app
+dvsa_hvt-read-api,serverless function to query dynamo db table,dynamo db query serverless function,aws,storage/nfs/aws/11201-11401/dvsa_hvt-read-api
+dvsa_hvt-write-api,serverless function to write to dynamo db table,dynamo db write query serverless,aws,storage/nfs/aws/7201-7401/dvsa_hvt-write-api
+dvsa_hvt-record-handler,serverless function to publish sns topic once data to dynamodb table is written,serverless sns topic publish dynamodb write,aws,storage/nfs/aws/7201-7401/dvsa_hvt-record-handler
+whelmed_ca_aws_lambda_anony_twit,twitter anonymous template,twitter anonymous template,aws,storage/nfs/aws/8601-8801/whelmed_ca_aws_lambda_anony_twit
+sQuiz-2_Core,a quiz application about culture,quiz culture,aws,storage/nfs/aws/3801-4001/sQuiz-2_Core
+amagimedia_themis,feature add on for ses,ses feature add on,aws,storage/nfs/aws/6201-6401/amagimedia_themis
+anoff_cryptobooks,provides cryptocurrency prices and bookkeeping methods,cryptocurrency bookkeeping crypto,aws,storage/nfs/azure/11200-11400/anoff_cryptobooks
+alancameronwills_historymap-server,information retrieval application for history map server,information retrieval image compression history map,azure,storage/nfs/azure/20600-20800/alancameronwills_historymap-server
+JeremyLikness_serverless-url-shortener,serverless url shortener function,serverless url shortener function,azure,storage/nfs/azure/17000-17200/JeremyLikness_serverless-url-shortener
+dArignac_shorty,serverless url shortener and qr code generator,serverless url shortener qr code generator,azure,storage/nfs/azure/12400-12600/dArignac_shorty
+neofelisho_AggregateSmsService,sms service and log querying application,sms service log querying application,azure,storage/nfs/azure/21400-21600/neofelisho_AggregateSmsService
+davidpallmann_world-factbook-site,world factbook site scrape and data collect,world factbook site scrape data collect,azure,storage/nfs/azure/21000-21200/davidpallmann_world-factbook-site
+bbrewer97202_bundesliga_table,information retrieval application for bundesliga scores and matches,information retrieval bundesliga information,serverless,storage/nfs/serverless/6800-7000/bbrewer97202_bundesliga_table
+jottenlips_tinyauth,passwordless graphql authentication service with sms,passwordless graphql authentication service sms,serverless,storage/nfs/serverless/2000-2200/jottenlips_tinyauth
+jottenlips_hangtime-graphql,authentication service with sms,authentication service sms,serverless,storage/nfs/serverless/19000-19200/jottenlips_hangtime-graphql
+keithrozario_Chlorine-40,serverless application for parsing through certificate logs,serverless certificate logs,serverless,storage/nfs/serverless/20000-20200/keithrozario_Chlorine-40
+tyba-co_SlackQueryBot,slack bot that tries to find a sql query within messages,slack bot sql query find,serverless,storage/nfs/serverless/2400-2600/tyba-co_SlackQueryBot
+bahrmichael_twitter-sentiment-analyzer,allows you to monitor sentiment of a particular topic on twitter,twitter sentiment topic monitor,serverless,storage/nfs/serverless/5200-5400/bahrmichael_twitter-sentiment-analyzer
+chyuck_aws-lambda-nodejs-graphql,graphql serverless api extension,graphql serverless api extension,serverless,storage/nfs/serverless/27600-27800/chyuck_aws-lambda-nodejs-graphql
+zschuster_schedule_generator,api to generate golf practice schedule,golf practice schedule api,serverless,storage/nfs/serverless/29000-29200/zschuster_schedule_generator
+jottenlips_jazz-charts-api,jazz notes information retrieval application,jazz notes information retrieval application,serverless,storage/nfs/serverless/17600-17800/jottenlips_jazz-charts-api
+amuelli_serverless-slack-lunch-hunter,application to scrape lunch menu and post on slack channel,slack lunch menu scrape application,serverless,storage/nfs/serverless/1000-1200/amuelli_serverless-slack-lunch-hunter
+mattrigg9_knowmystatus-api,information retrieval api for website knowmystatus.us,information retrieval knowmystatus.us api,serverless,storage/nfs/serverless/16800-17000/mattrigg9_knowmystatus-api
+dvsa_mes-data-migration-service,service that implements data replication from tars source database to target database,data replication service,serverless,storage/nfs/serverless/4800-5000/dvsa_mes-data-migration-service
+matchingood_mail-parser-api,application to parse mail content,mail content parser application,serverless,storage/nfs/serverless/16000-16200/matchingood_mail-parser-api
+ioviic_RecordMe,serverless application for time tracking,serverless time tracking application,serverless,storage/nfs/serverless/2000-2200/ioviic_RecordMe
+bscaspar_serverless-cognito-auth,simple web authentication with aws cognito,simple web authentication aws cognito,serverless,storage/nfs/serverless/9600-9800/bscaspar_serverless-cognito-auth
+t04glovern_selfie2anime,backend for selfie 2 anime website,backend selfie 2 anime website,serverless,storage/nfs/serverless/22600-22800/t04glovern_selfie2anime
+Toil-Tracker_toil-bot,slack bot to track toil for developers,slack bot to track toil for developers,serverless,storage/nfs/serverless/4600-4800/Toil-Tracker_toil-bot
+iamatharkhan_dynamodb-restore,detect table delete and restore based on available backups,detect table delete and restore based on available backups,serverless,storage/nfs/serverless/17000-17200/iamatharkhan_dynamodb-restore
+gofynd_alb-logs-parser,parse alb logs to load them on athena,parse logs load on athena,serverless,storage/nfs/serverless/24000-24200/gofynd_alb-logs-parser
+AlexeyPerov_Monday.com-Auto-ID-generator,automatic id generator for monday.com can be used as webhook for it,automatic id generator monday.com webhook,serverless,storage/nfs/serverless/12000-12200/AlexeyPerov_Monday.com-Auto-ID-generator
+cossou_mws-orders-webhook,serverless function to fire webhook for mws orders,serverless mws orders webhook,serverless,storage/nfs/serverless/4800-5000/cossou_mws-orders-webhook
+MacHu-GWU_dupe_remove-project,remove duplicate data in database,remove duplicate data in database,serverless,storage/nfs/serverless/23400-23600/MacHu-GWU_dupe_remove-project
+kdcio_serverless-html-to-pdf,serverless function to convert html pages to pdf,serverless html to pdf,serverless,storage/nfs/serverless/3000-3200/kdcio_serverless-html-to-pdf
+bahrmichael_aws-scheduler,schedule point in time events,schedule point in time events,serverless,storage/nfs/serverless/8800-9000/bahrmichael_aws-scheduler
+mimsy_pompic,storage implementation using serverless,storage implementation serverless,serverless,storage/nfs/serverless/27800-28000/mimsy_pompic
+vdymna_rekognition-video-analyzer,mp4 video analyzer using serverless functions,mp4 video analyzer serverless functions,serverless,storage/nfs/serverless/16200-16400/vdymna_rekognition-video-analyzer
+ownstats_ownstats,host privacy effective websites using cloudfront,host privacy effective websites cloudfront,serverless,storage/nfs/serverless/24000-24200/ownstats_ownstats
+HaifengMei_go-ceries-server,backend for ecommerce provisioning service,backend ecommerce provisioning service,serverless,storage/nfs/serverless/20000-20200/HaifengMei_go-ceries-server
+Shahriar701_e-fleet,application for managing e-fleet kinda travel management via available fleet,application e-fleet travel management,serverless,storage/nfs/serverless/7800-8000/Shahriar701_e-fleet
+niceb5y_telegram-inline-image-search,telegram inline image search,telegram inline image search,serverless,storage/nfs/serverless/27600-27800/niceb5y_telegram-inline-image-search
+ngranback_Music-recommendation-project,music recommendation project,music recommendation project,serverless,storage/nfs/serverless/28200-28400/ngranback_Music-recommendation-project
+HannahStahl_photo-upload-backend,serverless photo upload backend for website,serverless photo image upload backend,serverless,storage/nfs/serverless/10600-10800/HannahStahl_photo-upload-backend
+taleofddh_taleofddh-api,api backend for a website,api backend website taleofddh,serverless,storage/nfs/serverless/22000-22200/taleofddh_taleofddh-api
+chrisns_iot-thing-manager,manage things using mqtt aws,manage things mqtt aws,serverless,storage/nfs/serverless/21200-21400/chrisns_iot-thing-manager
+preshetin_csv-to-dynamodb,serverless csv to dynamodb,serverless csv to dynamodb,serverless,storage/nfs/serverless/15000-15200/preshetin_csv-to-dynamodb
+hamdaankhalid_serverless-UI-reviewer-app,application to collect user interface reviews,application user interface reviews,serverless,storage/nfs/serverless/12400-12600/hamdaankhalid_serverless-UI-reviewer-app
+t2h5_uptime-monitoring,monitoring target endpoint health every 5 minutes,monitoring target endpoint health schedule serverless,serverless,storage/nfs/serverless/200-400/t2h5_uptime-monitoring
+Brikl_serverless-apollo-dynamodbcache,usign apollo server 2 with dynamodb as cache for persisted queries,apollo server cache persisted queries,serverless,storage/nfs/serverless/29400-29600/Brikl_serverless-apollo-dynamodbcache
+AlexHartford_redditscore,rate reddit comments using machine learning to understand roast rate,reddit rate comments roast machine learning,serverless,storage/nfs/serverless/6400-6600/AlexHartford_redditscore
+jsstrn_subhas-music-bot,A bot for local artists to share their music,telegram bot music sharing share,serverless,storage/nfs/serverless/27400-27600/jsstrn_subhas-music-bot
+joilsonLeal_lyrify,search music by lyrics,search music lyrics,serverless,storage/nfs/serverless/22600-22800/joilsonLeal_lyrify
+RemiTorracinta_chkspk,generate spectogram from music files,generate spectogram music files,serverless,storage/nfs/serverless/2800-3000/RemiTorracinta_chkspk
+andrewjshilliday_listen-together,listen to music together on apple music,listen music together,serverless,storage/nfs/serverless/10200-10400/andrewjshilliday_listen-together
+janfabian_rozhlas-export,get and monitor audio,get monitor audio db youtube,serverless,storage/nfs/serverless/19000-19200/janfabian_rozhlas-export
+sergei-p_Cloud-Based-Music-Player,cloud based in browser music player,cloud music player web application,serverless,storage/nfs/serverless/10400-10600/sergei-p_Cloud-Based-Music-Player
+TomSpencerLondon_aws-lambda-tuning,powertune aws lambda function by invoking function with different calculation,powertune aws lambda optimize cost save,aws,storage/nfs/aws/9401-9601/TomSpencerLondon_aws-lambda-tuning
+pjd1271_pinball-scoreboard-api,pinball scoreboard api,pinball scoreboard api,serverless,storage/nfs/serverless/4600-4800/pjd1271_pinball-scoreboard-api
+blibor_spreadshare-image-optimizer,image microservice to compress and store images in s3,image microservice compress image s3,serverless,storage/nfs/serverless/21600-21800/blibor_spreadshare-image-optimizer
+vbezgachev_tf_aws_lambda,serverless GAN model using tensorflow,serverless GAN generated adversarial network tensorflow,serverless,storage/nfs/serverless/19200-19400/vbezgachev_tf_aws_lambda
+nicor88_aws-state-machine-etl,extract translate and load ETL based on state machine and lambda,etl ETL state machines serverless functions extract translate and load,serverless,storage/nfs/serverless/16800-17000/nicor88_aws-state-machine-etl
+verypossible_pychain,blockchain in serverless setting,blockchain serverless sample application,serverless,storage/nfs/serverless/16000-16200/verypossible_pychain
+succulentpup_serverless-image-reducer,image resize in serverless,image resize reducer serverless,serverless,storage/nfs/serverless/28600-28800/succulentpup_serverless-image-reducer
+wuh0007_severless_ML_live,machine learning model of regression nlp visualization and resnet classifier,machine learning model regression nlp visualization and resnet classifier,serverless,storage/nfs/serverless/3600-3800/wuh0007_severless_ML_live
+gakpenting_IBM-autoai,machine learning model for prediction using ibm auto ai,machine learning model prediction using ibm auto ai,serverless,storage/nfs/serverless/26400-26600/gakpenting_IBM-autoai
+uport-project_lambda-unnu,feature to enable contract structure for the device key blockchain,feature contract structure device key blockchain,serverless,storage/nfs/serverless/1800-2000/uport-project_lambda-unnu
+lkcozy_blockchain,application related to blockchain,application blockchain,serverless,storage/nfs/serverless/29400-29600/lkcozy_blockchain
+BlockchainZoo_keyhub-vault,an application to manage keyhub vault for blockchain,keyhub vault key blockchain,serverless,storage/nfs/serverless/3000-3200/BlockchainZoo_keyhub-vault
+afigar_anesthesia-blockchain-sns,aws lambda function in nodejs triggered by SNS message that saves data to BigchainDB,aws sns blockchain trigger message BigchainDB,serverless,storage/nfs/serverless/2200-2400/afigar_anesthesia-blockchain-sns
+ConsenSysMesh_Luxarity-SensuiMod,proper blockchain implementation for serverless,blockchain implementation,serverless,storage/nfs/serverless/23000-23200/ConsenSysMesh_Luxarity-SensuiMod
+singnet_snet-marketplace-service,service for decentralized blockchain marketplace,service marketplace blockchain,serverless,storage/nfs/serverless/11400-11600/singnet_snet-marketplace-service
+peepsx_dnames-beta,signup system based on arisen blockchain,signup system based on arisen blockchain,serverless,storage/nfs/serverless/22000-22200/peepsx_dnames-beta
+countableSet_swimming-goggles,aws lambda to update s3 bucket policy with cloudflare ip addresses,aws lambda update s3 bucket policy cloudflare ip addresses,aws,storage/nfs/aws/2601-2801/countableSet_swimming-goggles
+JimmyBoyle_FeatureToggles,serverless app for maintaining feature flags,serverless app feature flags,aws,storage/nfs/aws/3601-3801/JimmyBoyle_FeatureToggles
+uvasoftware_guarana,debugging tool that captures http request and saves them to s3 for debugging,debugging tool http request capture s3,aws,storage/nfs/aws/13601-13801/uvasoftware_guarana
+evanchiu_serverless-galleria,serverless batch photo manipulation and processing image resize blur crop rotate compress sepia,serverless batch photo manipulation image resize blur crop rotate compress sepia,aws,storage/nfs/aws/1401-1601/evanchiu_serverless-galleria
+Venafi_aws-private-ca-policy-venafi,allows enforcement of enterprise security policy,allows enforcement enterprise security policy,aws,storage/nfs/serverless/14400-14600/Venafi_aws-private-ca-policy-venafi
+Tanbouz_codepipeline-s3-deploy,unwraps compressed input artifact and deploys the files to an s3 bucket with mime types,unwraps compressed input artifact deploy s3 bucket mime types,aws,storage/nfs/aws/8601-8801/Tanbouz_codepipeline-s3-deploy
+i001962_serverless-webmerge,copy file and merge fields using aws lambda and webmerge,copy file and merge fields aws lambda webmerge,aws,storage/nfs/aws/8201-8401/i001962_serverless-webmerge
+trendmicro_cloudone-filestorage-plugins,cloud one file storage security post-scan,cloud one file storage security post-scan,aws,storage/nfs/aws/12401-12601/trendmicro_cloudone-filestorage-plugins
+enr1c091_amazon-cognito-facial-recognition-auth,implementation of passwordless facial recognition authentication,implementation passwordless facial recognition authentication auth,aws,storage/nfs/aws/3601-3801/enr1c091_amazon-cognito-facial-recognition-auth
+endk17_faceAuth,implementation of passwordless facial recognition authentication,implementation passwordless facial recognition authentication auth,aws,storage/nfs/aws/1201-1401/endk17_faceAuth
+kouz75_lambda-edge-audio,aws cloudformation stack to manipulate audio files with lambda edge,aws cloudformation stack audio files lambda edge,aws,storage/nfs/aws/6201-6401/kouz75_lambda-edge-audio
+uvasoftware_scanii-lambda,content processing engine for scanii,content processing engine scanii,aws,storage/nfs/aws/9401-9601/uvasoftware_scanii-lambda
+gracious-tech_stello,end to end encrypted messaging service using cloud storage,end to end encrypted messaging service cloud storage,aws,storage/nfs/aws/13201-13401/gracious-tech_stello
+QLife-Inc_cloudfront-auth-filter,aws lambda at edge function for authentication and authorization with amazon cloudfront,aws lambda at edge function authentication and authorization cloudfront,aws,storage/nfs/aws/10201-10401/QLife-Inc_cloudfront-auth-filter
+tomwwright_littleorange,multi-account blueprint for aws,multi-account blueprint aws,aws,storage/nfs/aws/12401-12601/tomwwright_littleorange
+aidenkihyunkim_aws-lambda-update-route53-record-to-ec2-public-ip-python3,performs inserting updating the host record of route53 dns automatically using the cloudwatch event of ec2 state changing,performs inserting updating the host record route53 dns automatically cloudwatch event ec2 state changing,aws,storage/nfs/aws/401-601/aidenkihyunkim_aws-lambda-update-route53-record-to-ec2-public-ip-python3
+AllenInstitute_segmentation-labeling-app,custom labelling workflow using aws sagemaker,custom labelling workflow aws sagemaker,aws,storage/nfs/aws/8601-8801/AllenInstitute_segmentation-labeling-app
+rewindio_scheduled-psql-script-runner,runs postgres scripts against rds on one of 3 predefined schedules,runs postgres scripts rds on one of 3 predefined schedules,aws,storage/nfs/aws/201-401/rewindio_scheduled-psql-script-runner
+mrvladis_privatelinkdns,aws vpc privatelink implementation with dns,aws vpc privatelink implementation dns,aws,storage/nfs/aws/7401-7601/mrvladis_privatelinkdns
+debnsuma_MLInference-Lambda-EFS,repository for deploying multiple machine learning models for inference on aws lambda and amazon efs,repository multiple machine learning models inference aws lambda amazon efs,aws,storage/nfs/aws/401-601/debnsuma_MLInference-Lambda-EFS
+lbjay_gitwishes,triggers an AWS Lambda function to search github commits for messages from the previous day matching variations of i wish,triggers aws lambda function to search github commits for messages from the previous day matching variations i wish,aws,storage/nfs/aws/1201-1401/lbjay_gitwishes
+Shrivallabha_Streaming-Data-Analysis-for-Household-Energy-Consumption,streaming data analysis for household energy consumption,streaming data analysis household energy consumption,aws,storage/nfs/aws/6801-7001/Shrivallabha_Streaming-Data-Analysis-for-Household-Energy-Consumption
+groorj_aws-ip-range-api,serverless function to validate an ip address,serverless function ip address,serverless,storage/nfs/serverless/200-400/groorj_aws-ip-range-api
+bahlo_serverless-podcast,podcast website implementation using serverless,podcast website implementation serverless,serverless,storage/nfs/serverless/23000-23200/bahlo_serverless-podcast
+dmillikan_aws_automation,synchronize local directory to an s3 bucket,synchronize local directory s3 bucket,serverless,storage/nfs/serverless/20600-20800/dmillikan_aws_automation
+zaMedvedem_automating-aws-with-python,synchronize local directory to an s3 bucket and notify as well to slack users,synchronize local directory s3 bucket and notify as well slack users,serverless,storage/nfs/serverless/20400-20600/zaMedvedem_automating-aws-with-python
+aureliomarcoag_serverless-acm-manager,serverless application that reads domains from files stored in an s3 bucket and creates one acm certificate for each file,serverless application domains files stored s3 bucket create acm certificate,serverless,storage/nfs/serverless/3600-3800/aureliomarcoag_serverless-acm-manager
+sreejesh79_Get-Signed-Url-for-S3-upload,generate a cloudfront signed url with an expiry time for s3 bucket access,generate cloudfront signed url expiry time s3 bucket access,serverless,storage/nfs/serverless/17200-17400/sreejesh79_Get-Signed-Url-for-S3-upload
+Ennexa_serverless-ddns-updater,dynamic dns updater service,dynamic dns updater service,serverless,storage/nfs/serverless/4600-4800/Ennexa_serverless-ddns-updater
+oliome_tap_csv,convert csv to json,convert csv json,serverless,storage/nfs/serverless/13000-13200/oliome_tap_csv
+aofry_ec2noip,ec2noip is a Python lambda which update noip.com service when ec2 isntance go up,ec2noip noip service update ec2 instance,serverless,storage/nfs/serverless/7200-7400/aofry_ec2noip
+jpswade_checkip,what is my ip address lookup service,what is my ip address lookup service,serverless,storage/nfs/serverless/6200-6400/jpswade_checkip
+mgranell_s3-pgp-transform,pgp encrypts files added to an encryption s3 bucket and pgp decrypts files added to a decryption bucket,pgp transform ecrypt s3 decrypt files,serverless,storage/nfs/serverless/14200-14400/mgranell_s3-pgp-transform
+servian_aws-auto-remediate,automated remediation of common aws security issues,automated remediation aws security issues,serverless,storage/nfs/serverless/15800-16000/servian_aws-auto-remediate
+harshkavdikar1_s3-to-gcs-streaming,data streaming from s3 to google cloud storage,data streaming s3 google cloud storage,serverless,storage/nfs/serverless/17400-17600/harshkavdikar1_s3-to-gcs-streaming
+rokumatsumoto_aws-node-dynamic-image-resizer,event driven image resizing,event driven image resizing,serverless,storage/nfs/serverless/18600-18800/rokumatsumoto_aws-node-dynamic-image-resizer
+99x_aws-api-gateway-policy-generator,generates aws api gateway policy,generates aws api gateway policy,serverless,storage/nfs/serverless/1000-1200/99x_aws-api-gateway-policy-generator
